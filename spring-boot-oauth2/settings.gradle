@@ -1,0 +1,4 @@
+rootProject.name = "spring-boot-oauth2"
+
+include("authorization-server")
+include("resource-Server")
