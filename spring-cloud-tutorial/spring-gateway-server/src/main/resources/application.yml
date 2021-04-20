@@ -1,0 +1,27 @@
+
+
+server:
+  port: 8001
+
+spring:
+  application:
+    name: gateway-server
+  cloud:
+    gateway:
+      routes:
+        - id: backend-service
+          uri: lb://backend-service
+          predicates:
+            - Path=/backend/**
+          filters:
+            - RewritePath=/backend/(?<path>.*),/$\{path}
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    preferIpAddress: true
+
+
+
