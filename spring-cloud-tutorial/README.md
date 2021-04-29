@@ -227,8 +227,9 @@ http://localhost:8002/hello
 화면이 표시되면 잘 구동이 된 거다.
 
 
+## 마무리
 
-## 전체 구동
+### 전체 구동
 자, 이제 모든 어플리케이션이  완성 되었다. 이제 모든 서버를 기동하여 아래 URL 접속해 보자
 ```
 http://localhost:8001/backend/hello
@@ -237,3 +238,8 @@ http://localhost:8001/backend/hello
 화면이 표시되었다면, 제대로 동작하는 것이다.
 
 이는 각 어플리케이션이 모두 연결이 되었다는 것을 뜻한다.
+
+### 웹 페이지
+위에 대한 내용은 [devkuma 웹 페이지](http://www.devkuma.com/pages/1522)에도 설명되어 있다.
+
+
