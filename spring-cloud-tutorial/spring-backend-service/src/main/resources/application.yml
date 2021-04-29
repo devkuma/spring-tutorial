@@ -1,9 +1,10 @@
+server:
+  port: 8002
 
 spring:
   application:
     name: backend-service
-server:
-  port: 8002
+
 eureka:
   client:
     serviceUrl:

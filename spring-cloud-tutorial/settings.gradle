@@ -1,5 +1,5 @@
 rootProject.name = 'spring-cloud-tutorial'
 
-include 'spring-eureka-server'
+include 'spring-discovery-server'
 include 'spring-gateway-server'
 include 'spring-backend-service'

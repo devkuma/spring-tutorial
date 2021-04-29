@@ -1,0 +1,9 @@
+server:
+  port: 8761
+
+eureka:
+  client:
+    # 유레카에 등록할지 여부. 자기 자신을 등록할 필요가 없다.
+    registerWithEureka: false
+    # 유레카에서 조회할지 여부. 조회해서 로직을 수행할 일이 없다.
+    fetchRegistry: false
