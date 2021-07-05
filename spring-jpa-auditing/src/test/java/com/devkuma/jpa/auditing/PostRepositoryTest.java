@@ -3,6 +3,7 @@ package com.devkuma.jpa.auditing;
 import com.devkuma.jpa.auditing.domain.Post;
 import com.devkuma.jpa.auditing.repository.PostRepository;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -20,7 +21,8 @@ public class PostRepositoryTest {
     PostRepository postRepository;
 
     @Test
-    public void 게시글저장() {
+    @DisplayName("게시글 저장")
+    public void savePost() {
         // given
         LocalDateTime now = LocalDateTime.of(2020, 8, 12, 0, 0, 0);
         postRepository.save(Post.builder()
