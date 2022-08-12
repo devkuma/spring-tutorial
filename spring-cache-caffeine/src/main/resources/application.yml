@@ -1,0 +1,5 @@
+spring:
+  cache:
+    cache-names: category
+    caffeine:
+      spec: maximumSize=100, expireAfterWrite=60s
