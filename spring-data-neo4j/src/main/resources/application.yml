@@ -1,0 +1,10 @@
+spring:
+  neo4j:
+    uri: bolt://localhost:7687
+    authentication:
+      username: neo4j
+      password: secret123
+
+logging:
+  level:
+    org.springframework.data.neo4j.cypher: ERROR

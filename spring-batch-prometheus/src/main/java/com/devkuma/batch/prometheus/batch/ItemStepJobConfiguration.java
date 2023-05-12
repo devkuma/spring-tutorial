@@ -19,7 +19,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class ItemStepJobConfiguration {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(TaskletStepJobConfiguration.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(ItemStepJobConfiguration.class);
 
     private Random random;
 
