@@ -1,0 +1,16 @@
+spring:
+  main:
+    web-application-type: none
+    # NOTE: You must disable the banner and the console logging to allow the STDIO transport to work !!!
+    banner-mode: off
+  ai:
+    mcp:
+      server:
+        name: my-weather-server
+        version: 0.0.1
+
+logging:
+  pattern:
+    console:
+  file:
+    name: ./model-context-protocol/spring-ai-starter-mcp-server/spring-ai-starter-mcp-server.log
