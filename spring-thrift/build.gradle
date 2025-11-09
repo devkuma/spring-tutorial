@@ -1,0 +1,35 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '2.7.12'
+	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+
+	id "org.jruyi.thrift" version "0.4.2"
+}
+
+group = 'com.devkuma'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+
+	implementation 'org.apache.thrift:libthrift:0.18.1'
+	implementation 'org.apache.httpcomponents:httpcore:4.4.16'
+
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
+
+compileThrift {
+	recurse true
+
+	generator 'html'
+	generator 'java', 'private-members'
+}
