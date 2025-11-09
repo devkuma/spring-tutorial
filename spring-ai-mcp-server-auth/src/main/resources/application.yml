@@ -1,6 +1,6 @@
 spring:
   main:
-    web-application-type: none
+#    web-application-type: none
     # NOTE: You must disable the banner and the console logging to allow the STDIO transport to work !!!
     banner-mode: off
   ai:
@@ -8,9 +8,12 @@ spring:
       server:
         name: my-weather-server
         version: 0.0.1
+        protocol: STATELESS # webmvc 추가
 
 logging:
-  pattern:
-    console:
+#  pattern:
+#    console:
   file:
-    name: ./log/spring-ai-starter-mcp-server.log
+    name: ./log/spring-ai-starter-mcp-server-auth.log
+  level:
+    org.springframework.security: TRACE

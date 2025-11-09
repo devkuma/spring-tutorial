@@ -19,12 +19,15 @@ repositories {
 	mavenCentral()
 }
 
-extra["springAiVersion"] = "1.1.0-M4" // 최신 버전으로 변경
+extra["springAiVersion"] = "1.1.0-M4"
 
 dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.springframework.ai:spring-ai-starter-mcp-server")
-	testImplementation("org.springframework.boot:spring-boot-starter-test")
+    implementation("org.springframework.ai:spring-ai-starter-mcp-server-webmvc") // webmvc 추가
+    implementation("org.springframework.boot:spring-boot-starter-security") // auth 추가
+    implementation("org.springaicommunity:mcp-server-security:0.0.3") // auth 추가
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
