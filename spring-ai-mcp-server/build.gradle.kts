@@ -19,7 +19,7 @@ repositories {
 	mavenCentral()
 }
 
-extra["springAiVersion"] = "1.0.3"
+extra["springAiVersion"] = "1.1.0-M4"
 
 dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
