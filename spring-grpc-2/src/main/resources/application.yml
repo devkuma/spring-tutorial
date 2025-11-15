@@ -1,0 +1,9 @@
+
+spring:
+  grpc:
+    server:
+      port: 9090
+    client:
+      channels:
+        local:
+          address: "localhost:9090"
